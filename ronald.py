@@ -1,6 +1,7 @@
 import os
 
-os.environ["OPENAI_API_KEY"] = input("API Key: ")
+API_KEY = input("API Key: ")
+os.environ["OPENAI_API_KEY"] = API_KEY
 
 import openai
 
