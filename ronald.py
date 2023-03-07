@@ -1,6 +1,6 @@
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = input("API Key: ")
 
 import openai
 
@@ -8,7 +8,7 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 
 import webbrowser
 
-mission = input()
+mission = input("What can I help you with? - ")
 
 if mission == "Chat":
     prompt = input("You: ")
