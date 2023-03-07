@@ -48,5 +48,6 @@ if mission == "Image Generation":
             size="1024x1024"
             )
         webbrowser.open(image['data'][0]['url'])
+        print("Click the url: " + image['data'][0]['url'])
         user_input_image = input("Image Prompt: ")
         prompt = user_input_image
