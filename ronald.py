@@ -34,7 +34,7 @@ while mission in functions:
         user_input_comp = prompt
         while user_input_comp != "End":
             response = openai.Completion.create(
-                model="gpt-3.5-turbo",
+                model="text-davinci-002",
                 prompt=prompt,
                 max_tokens=1000
                 )
