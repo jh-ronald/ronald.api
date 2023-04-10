@@ -23,7 +23,7 @@ while mission in functions:
         user_input_chat = prompt
         while user_input_chat != "End":
             completion = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
+                model="gpt-3.5-turbo-0301",
                 messages=[
                 {"role": "user", "content": prompt}
                 ]
@@ -37,7 +37,7 @@ while mission in functions:
         user_input_comp = prompt
         while user_input_comp != "End":
             response = openai.Completion.create(
-                model="text-davinci-002",
+                model="text-davinci-003",
                 prompt=prompt,
                 max_tokens=1000
                 )
